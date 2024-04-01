@@ -7,9 +7,21 @@ let passportWithAddress = {
     }
 };
 
-let {name, surname, address: {country, city}} = passportWithAddress;
-let passportWithAddress2 = {name, surname, address: {country, city}};
-passportWithAddress2.address.city = 'Bobryisk';
+let {name, 
+    surname, 
+    address: {
+        country, 
+        city
+    }} = passportWithAddress;
+
+let passportWithAddress2 = {name, 
+    surname, 
+    address: {
+        country, 
+        city
+    }};
+
+passportWithAddress2.address.city = "Bobryisk";
 
 console.log(passportWithAddress);
 console.log(passportWithAddress2);
