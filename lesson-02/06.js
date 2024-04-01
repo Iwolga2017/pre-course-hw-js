@@ -23,7 +23,7 @@ let passportWithAddress2 = {name,
 
 passportWithAddress2.address.city = "Bobryisk";
 
-console.log(passportWithAddress);
-console.log(passportWithAddress2);
+console.log(passportWithAddress.address.city);
+console.log(passportWithAddress2.address.city);
 
 
