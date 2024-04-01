@@ -7,22 +7,9 @@ let passportMarried = {
     }
 };
 
-let { name,
-    surname,
-    address: {
-        country,
-        city
-    } } = passportMarried;
+let passportMarried2 = { ...passportMarried, married: true, address: { ...passportMarried.address } };
+passportMarried2.married = true;
 
-let passportMarried2 = {
-    name,
-    surname,
-    married: true,
-    address: {
-        country,
-        city
-    }
-};
 
 console.log(passportMarried);
 console.log(passportMarried2);
